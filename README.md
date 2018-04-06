@@ -1,2 +1,3 @@
 # java_knowledge
-my notes about Java
+
+wiki page: https://github.com/OndrejKucera/java_knowledge/wiki
