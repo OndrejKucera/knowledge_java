@@ -7,8 +7,8 @@ Generela Information
 * Class based and object oriented language
 * **Statically typed**: variables have definite types. The compile-time error can occur when a value of an incompatible type is assigned to a variable. (but Java is not perfectly type-safe -> it is possible to cast)
 * **Interpreted languages**: [bytecode](https://en.wikipedia.org/wiki/Java_bytecode) + [interpreter](https://en.wikipedia.org/wiki/Interpreter_(computing)) => run
-* **Main properties**: portable (class files), automatic memory management ([garbage collection](../master/Java_Memory_Management.md#garbage-collector)), can not directly address memory, pass-by-value, not full multiple inheritances, no operators overloading, [generic classes](https://github.com/OndrejKucera/java_knowledge/wiki/Basics#generic-types), [multithreaded](https://github.com/OndrejKucera/java_knowledge/wiki/Concurrency#concurrency), ...  
-* Java **source code** is class file with extension .class. It has to be converted to Java bytecode for [JVM](https://github.com/OndrejKucera/java_knowledge/wiki/Java-Virtual-Machine#java-virtual-machine) 
+* **Main properties**: portable (class files), automatic memory management ([garbage collection](../master/Java_Memory_Management.md#garbage-collector)), can not directly address memory, pass-by-value, not full multiple inheritances, no operators overloading, [generic classes](../master/Basics.md#generic-types), [multithreaded](../master/Concurrency#concurrency), ...  
+* Java **source code** is class file with extension .class. It has to be converted to Java bytecode for [JVM](../master/Java_Virtual_Machine.md#java-virtual-machine) 
 class file. It is the smallest unit of functionality the platform will deal with
 * **javac**: produce bytecode, But! it is not a real compiler
 * Start an application: `java <arguments> <program name>`
