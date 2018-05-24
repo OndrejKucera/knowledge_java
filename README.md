@@ -6,7 +6,7 @@ Notes are not exhausted knowledge about Java. It reflects (so far) only Java 8. 
 2) [Basics](https://github.com/OndrejKucera/knowledge_java/blob/master/Basics.md)
 3) [Java Collections](https://github.com/OndrejKucera/knowledge_java/blob/master/Java_Collections.md)
 4) [Concurrency](https://github.com/OndrejKucera/knowledge_java/blob/master/Concurrency.md)
-5) [Input/Output](https://github.com/OndrejKucera/knowledge_java/blob/master/InputOutput.md)
+5) [Input/Output](https://github.com/OndrejKucera/knowledge_java/blob/master/Input_Output.md)
 6) [Reflection](https://github.com/OndrejKucera/knowledge_java/blob/master/Reflection.md)
 7) [Java Virtual Machine](https://github.com/OndrejKucera/knowledge_java/blob/master/Java_Virtual_Machine.md)
 8) [Java Memory Management](https://github.com/OndrejKucera/knowledge_java/blob/master/Java_Memory_Management.md)
