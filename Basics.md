@@ -17,9 +17,9 @@ Method signature can contain checked exception
 * **Overloading** (method) means that there are more methods with the same name, but they have different parameters.
 
 ## Reference Types
-* **5 types**: [class](https://github.com/OndrejKucera/java_knowledge/wiki/Basics/#classes), [interface](https://github.com/OndrejKucera/java_knowledge/wiki/Basics/#interfaces), [enumerate](https://github.com/OndrejKucera/java_knowledge/wiki/Basics/#enums), [annotation](https://github.com/OndrejKucera/java_knowledge/wiki/Basics/#annotations), [array](https://github.com/OndrejKucera/java_knowledge/wiki/Basics/#arrays)
+* **5 types**: [class](../master/Basics.md/#classes), [interface](../master/Basics.md/#interfaces), [enumerate](../master/Basics.md/#enums), [annotation](../master/Basics.md/#annotations), [array](../master/Basics.md/#arrays)
 * They are user-defined, can be "unlimited" number of them
-* Memory for reference types (objects) is **dynamically allocated on [HEAP](https://github.com/OndrejKucera/java_knowledge/wiki/Java-Virtual-Machine#jvm-memory)**
+* Memory for reference types (objects) is **dynamically allocated on [HEAP](../master/Java_Virtual_Machine.md#jvm-memory)**
 * When object is passed to method, only reference to memory is passed (the memory is NOT copied) => Java is strictly **pass-by-value** -> it sends copy of reference
 * Java program can not manipulate (like C) with references
 * Can be **converted** - widening conversions (allowed automatically by the compiler) or narrowing conversions that require a cast (and possibly a runtime check).
