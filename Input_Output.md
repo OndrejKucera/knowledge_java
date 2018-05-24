@@ -1,6 +1,7 @@
-Handling Data Formats
+Input/Output
 ===========================
 
+## Handling Data Formats
 ### String
 * String class is handled in a special way for easy use. Literal `String` is an object.
 * 4 ways how to concatenate an String - plus operator, or `StringBuilder` (`StringBuffer` for concurrency), `String.concat()`
