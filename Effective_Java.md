@@ -1,7 +1,7 @@
 [Effective Java](https://www.goodreads.com/book/show/34927404-effective-java)
 ===============
 
-## Creating and Destroying Objects
+## 1 Creating and Destroying Objects
 #### 1. Consider static factory methods instead of constructors
    * (+) they have names
    * (+) not required to create a new object each time
@@ -32,7 +32,7 @@
    * (+) object must track whether it has been closed. Your class should implement `AutoCloseable`. 
 #### 9. Prefer try-with-resources to try-finally
 
-## Methods Common to All Objects
+## 2 Methods Common to All Objects
 #### 10. Obey the general contract when overriding equals
    * reflexive `(x.equals(x) == true)`, symmetric `(x.equals(y) == y.equals(x))`, transitivite `(x=y, y=z, x=z)`, consistent, non-nullity (`x.equals(null)` must return `false`)
    * it can not depends on unreliable resources
@@ -54,11 +54,52 @@
 #### 14. Consider implementing Comparable
    * Use of the relation operators `<` and `>` in `compareTo` methods is verbose and error-prone and no longer recommended. Instead use static compare methods in boxed primitive classes or the comparator construction methods in `Comparator` `construction.
 
-## Classes and Interfaces
+## 3 Classes and Interfaces
 #### 15. Minimize the accessibility of classes and members
- - TODO:
+   * make each class or member as inaccesible as possible
+   * instance of fields of public classes should rarely be public
+   * classes with public mutable fields are not generaly thread-safe
+   * it is wrong for class to have `public static final` array field, or accessor that returns such a field. -> client is able to modify content.
 #### 16. In public classes, use accessor methods, not public fields
- - TODO:
+   * if a class is accessible outside its package, provide accessor methods
+   * if class is package-private or is private nested class, there is nothing inherently wrong with exposing its data fields.
 #### 17. Minimize mutability
- - TODO:
-#### 18.
+   * immutable object are simple
+   * immutable objects are inherently thread-safe; they require no synchronization
+   * immutable objects can be shared freely
+   * immutable objects make great building blocks for other objects
+   * Constructors should create fully initialized objects with all of their invariats estabilished
+   * to make class immutable:
+     * don't provide the methods that modify the object's state
+     * ensure that the class can't be extended
+     * make all fields final
+     * make all fields private
+     * endsure exclusive access to any mutable components
+   * (-) the major disadvantage of immutable class is that they require a seperate objects for each distinct value
+#### 18. Favor composition over inheritance
+#### 19. Design and document for inheritance or else prohibit it
+#### 20. Prefer interfaces to abstract classes
+
+## 4 Generics
+26-33
+
+## 5 Enums and Annotations
+34-41
+
+## 6 Lambdas and Streams
+42-48
+
+## 7 Methods
+49-56
+
+## 8 General Programming
+57-68
+
+## 9 Exceptions
+69-77
+
+## 10 Concurrency
+78-84
+
+## 11 Serialization
+85-90
