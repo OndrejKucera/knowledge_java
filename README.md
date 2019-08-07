@@ -11,3 +11,7 @@ Notes are not exhausted knowledge about Java. It reflects (so far) only Java 8. 
 7) [Java Virtual Machine](https://github.com/OndrejKucera/knowledge_java/blob/master/Java_Virtual_Machine.md)
 8) [Java Memory Management](https://github.com/OndrejKucera/knowledge_java/blob/master/Java_Memory_Management.md)
 9) [Changes in Java 9](https://github.com/OndrejKucera/knowledge_java/blob/master/Changes_in_Java_9.md)
+
+---
+
+10) [Effective Java](https://github.com/OndrejKucera/knowledge_java/blob/master/Effective_Java.md)
