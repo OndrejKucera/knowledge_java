@@ -77,6 +77,11 @@
      * endsure exclusive access to any mutable components
    * (-) the major disadvantage of immutable class is that they require a seperate objects for each distinct value
 #### 18. Favor composition over inheritance
+  * (-) Inheritance of ordinary class can be dangerous
+    * inheritance violate encapsulation and leeds to fragile software
+  * Inheritance is appropriate in case when subclass is really type of superclass.
+  * It is safe use inheritance inside the package because superclass and subclass is under control. It is also safe extend classes which are documented and created for the purpose
+  * (+) It is possible to avoid inherince by composition. Into your new class, create private field of reference to existed class. Your new class will be wrapper. 
 #### 19. Design and document for inheritance or else prohibit it
 #### 20. Prefer interfaces to abstract classes
 
