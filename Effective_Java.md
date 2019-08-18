@@ -83,7 +83,20 @@
   * It is safe use inheritance inside the package because superclass and subclass is under control. It is also safe extend classes which are documented and created for the purpose
   * (+) It is possible to avoid inherince by composition. Into your new class, create private field of reference to existed class. Your new class will be wrapper. 
 #### 19. Design and document for inheritance or else prohibit it
+  * The class has to document its use of overridable methods. You can use Implementation Requirements
+  * The only way to test a class design for inheritance is to write subclasses. -> test the class by subclass is must!
+  * Constructors must not call overridable methods.
+  * Designing a class for inheritance requires is great effort and place limitation on the class.
+  * One of the solution - prohibit inheritance of classes that are not design to be safely subclassed
+    * use `final class`
+    * or or make all constructors private
 #### 20. Prefer interfaces to abstract classes
+  *
+#### 21. Design Interafaces for prosperity 
+#### 22.
+#### 23.
+#### 24.
+#### 25.
 
 ## 4 Generics
 26-33
