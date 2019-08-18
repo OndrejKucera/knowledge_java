@@ -91,12 +91,23 @@
     * use `final class`
     * or or make all constructors private
 #### 20. Prefer interfaces to abstract classes
-  *
+  * Existing classes can easily implement new interfaces. It is not easy to do with classes - Java permits only single inheritance. You have to hierarchically extends the class. 
+  * Interfaces allow for the construction of nonhierarchical type frameworks.
+  * Interfaces are ideal for defining mixins. 
+  * Interfaces enable safe, powerful functionality enhancements via the wrap- per class idiom
 #### 21. Design Interafaces for prosperity 
-#### 22.
-#### 23.
-#### 24.
-#### 25.
+  * It is not always possible to write default methods for all implemation cases.
+  * Although, it is possible to add default methods into existing interfaces, there is great risk in doing so. 
+  * It is critical to test all new interface which you want to release.
+#### 22. Use interafaces only to definne types 
+  * Don't define constants in interfaces - it is poor use of interface. Constant is implemation detail.
+  * Use public static final in class
+#### 23. Prefer class hierarchies to tagged classes
+  * 
+#### 24. Favor static member classes over nonstatic
+  *
+#### 25. Limit source of files to a single top-level class
+  *
 
 ## 4 Generics
 26-33
