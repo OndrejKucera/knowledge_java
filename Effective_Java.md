@@ -103,11 +103,16 @@
   * Don't define constants in interfaces - it is poor use of interface. Constant is implemation detail.
   * Use public static final in class
 #### 23. Prefer class hierarchies to tagged classes
-  * 
+  * Tagged clacc represent more "flavours" in one class, for example, by private field with enum. 
+  * Tagged classes are verbose, error-prone, and inefficient
+  * Create abstract class with abstract method instead.
 #### 24. Favor static member classes over nonstatic
-  *
+  * Make a static rather than a nonstatic member class
+    * without `static` each instance will have hiddent reference to its enclosing instance
+    * storing this reference takes time and space
+    * enclosing instance can be retained when it would otherwise be eligible for garbage collection
 #### 25. Limit source of files to a single top-level class
-  *
+  * Never put multiple top-level classes or interfaces in a single source file. Following this rule guarantees that you can’t have multiple definitions for a single class at compile time. 
 
 ## 4 Generics
 26-33
