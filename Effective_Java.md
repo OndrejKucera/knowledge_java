@@ -115,7 +115,30 @@
   * Never put multiple top-level classes or interfaces in a single source file. Following this rule guarantees that you can’t have multiple definitions for a single class at compile time. 
 
 ## 4 Generics
-26-33
+#### 26. Don’t use raw types
+  * If you use raw typesc (i.e. List), you lose all the safety and expressiveness benefits of generics. They are in language because of compatibility.
+  * You lose type safety if you use a raw type such as `List`, but not if you use a param- eterized type such as `List<Object>`
+  * You must use raw types in class literals. `List.class` is ligal,  `List<String>` is not legal
+#### 27. Eliminate unchecked warnings
+  * Eliminate every unchecked warning that you can
+  * If you can’t eliminate a warning, but you can prove that the code that provoked the warning is typesafe, then (and only then) suppress the warning with an `@SuppressWarnings("unchecked")` annotation.
+  * Always use the SuppressWarnings annotation on the smallest scope possible
+  * Every time you use a `@SuppressWarnings("unchecked")` annotation, add a comment saying why it is safe to do so.
+#### 28. Prefer lists to arrays
+  * Arrays and generics have very different type rules.
+  * Arrays are covariant and reified; generics are invariant and erased. As a consequence, arrays provide runtime type safety but not compile-time type safety, and vice versa for generics.
+#### 29. Favor generic types
+  * Generic types are safer and easier to use than types that require casts in client code.
+  * When you design new types, make sure that they can be used without such casts. This will often mean making the types generic.
+  * If you have any existing types that should be generic but aren’t, generify them. This will make life easier for new users of these types without breaking existing clients.
+#### 30. Favor generic methods
+  * Just as classes can be generic, so can methods
+  * The type parameter list, which declares the type parameters, goes between a method’s modifiers and its return type. `public static <E> Set<E> union(Set<E> s1, Set<E> s2)`
+  * Generic methods, like generic types, are safer and easier to use than methods requiring their clients to put explicit casts on input parameters and return values.
+#### 31. Use bounded wildcards to increase API flexibility
+#### 32. Combine generics and varargs judiciously
+#### 33. Consider type safe heterogeneous containers
+  * (156)
 
 ## 5 Enums and Annotations
 34-41
