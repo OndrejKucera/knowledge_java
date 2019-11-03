@@ -136,9 +136,15 @@
   * The type parameter list, which declares the type parameters, goes between a method’s modifiers and its return type. `public static <E> Set<E> union(Set<E> s1, Set<E> s2)`
   * Generic methods, like generic types, are safer and easier to use than methods requiring their clients to put explicit casts on input parameters and return values.
 #### 31. Use bounded wildcards to increase API flexibility
+  * User wildcard types on input parameters that represent producers (extend) or consumers (super)
+  * Do not user bounded wildcard as return type
+  * If the user of a class has to think about wildcard types, there is probably something wrong with API
+  * Use Comparable<? super T> in preference to Comparable<T>
+  * If a type parameter appears only once in a method declaration, replace it with a wildcard
 #### 32. Combine generics and varargs judiciously
+  * varargs and generics do not interact well 
+  * Use @SafeVarargs on every method with a varargs parameter of a generic or parameterized type,
 #### 33. Consider type safe heterogeneous containers
-  * (156)
 
 ## 5 Enums and Annotations
 34-41
