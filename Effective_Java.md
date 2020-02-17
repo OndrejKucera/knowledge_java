@@ -148,7 +148,7 @@
 
 ## 5 Enums and Annotations
 #### 34. Use enums instead of int constants
-  * Use enums any time you need a set of con- stants whose members are known at compile time.
+  * Use enums any time you need a set of constants whose members are known at compile time.
   * It is not necessary that the set of constants in an enum type stay fixed for all time.
 #### 35. Use instance fields instead of ordinals
   * 
