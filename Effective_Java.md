@@ -151,8 +151,9 @@
   * Use enums any time you need a set of constants whose members are known at compile time.
   * It is not necessary that the set of constants in an enum type stay fixed for all time.
 #### 35. Use instance fields instead of ordinals
-  * 
-#### 36.
+  * Never derive a value associated with an enum from its ordinal; store it in an instance field instead
+#### 36. Use EnumSet instead of bit fields
+  *
 #### 37.
 #### 38.
 #### 39.
