@@ -153,8 +153,8 @@
 #### 35. Use instance fields instead of ordinals
   * Never derive a value associated with an enum from its ordinal; store it in an instance field instead
 #### 36. Use EnumSet instead of bit fields
-  *
-#### 37.
+#### 37. Use EnumMap instead of ordinal indexing
+  * 
 #### 38.
 #### 39.
 #### 40.
