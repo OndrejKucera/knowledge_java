@@ -154,14 +154,26 @@
   * Never derive a value associated with an enum from its ordinal; store it in an instance field instead
 #### 36. Use EnumSet instead of bit fields
 #### 37. Use EnumMap instead of ordinal indexing
+#### 38. Emulate extensible enums with interfaces
+  * while you cannot write an extensible enum type, you can emulate it by writing an interface to accompany a basic enum type that implements the interface.
+#### 39. Prefer annotations to naming patterns
+  * There is simply no reason to use naming patterns when you can use annotations instead
+#### 40. Consistently use the Override annotation
   * 
-#### 38.
-#### 39.
-#### 40.
-#### 41.
+#### 41. Use marker interfaces to define types
+  * Marker interfaces define a type that is implemented by instances of the marked class; marker annotations do not.
+  * Another advantage of marker interfaces over marker annotations is that they can be targeted more precisely.
+  * The chief advantage of marker annotations over marker interfaces is that they are part of the larger annotation facility.
 
 ## 6 Lambdas and Streams
-42-48
+#### 42. Prefer lambdas to anonymous classes
+  *
+#### 43.
+#### 44.
+#### 45.
+#### 46.
+#### 47.
+#### 48.
 
 ## 7 Methods
 49-56
