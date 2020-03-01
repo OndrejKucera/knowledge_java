@@ -177,14 +177,30 @@
   * Using helper methods is even more important for readability in stream pipelines than in iterative code
   * You can not return from the enclosing method or throw any checked exception that this method is declared to throw.
 #### 46. Prefer side-effect-free functions in streams
-  *
 #### 47. Prefer Collection to Stream as a return type
-  *
+  * Collection or an appropriate subtype is generally the best return type for a public, sequence- returning method.
 #### 48. Use caution when making streams parallel
-  *
-
+  * performance gains from parallelism are best on streams over ArrayList, HashMap, HashSet, and ConcurrentHashMap instances; arrays; int ranges; and long ranges
+  * Not only can parallelizing a stream lead to poor performance, including liveness failures; it can lead to incorrect results and unpredictable behavior
+  * Under the right circumstances, it is possible to achieve near-linear speedup in the number of processor cores simply by add- ing a parallel call to a stream pipeline
+  
 ## 7 Methods
-49-56
+#### 49. Check parameters for validity
+  *
+#### 50. Make defensive copies when needed
+  *
+#### 51. Design method signatures carefully
+  *
+#### 52. Use overloading judiciously
+  *
+#### 53. Use varargs judiciously
+  *
+#### 54. Return empty collections or arrays, not nulls
+  *
+#### 55. Return optionals judiciously
+  *
+#### 56. Write doc comments for all exposed API elements
+  *
 
 ## 8 General Programming
 57-68
