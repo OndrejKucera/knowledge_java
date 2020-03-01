@@ -167,10 +167,14 @@
 
 ## 6 Lambdas and Streams
 #### 42. Prefer lambdas to anonymous classes
+  * lambdas lack names and documentation; if a computation isn’t self-explanatory, or exceeds a few lines, don’t put it in a lambda.
+  * you should rarely, if ever, serialize a lambda
+#### 43. Prefer method references to lambdas
+  * Where method references are shorter and clearer, use them; where they aren’t, stick with lambdas.
+#### 44. Favor the use of standard functional interfaces
+  * If one of the standard functional interfaces does the job, you should generally use it in preference to a purpose-built functional interface.
+#### 45. Use streams judiciously
   *
-#### 43.
-#### 44.
-#### 45.
 #### 46.
 #### 47.
 #### 48.
