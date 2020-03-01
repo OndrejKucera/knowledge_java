@@ -174,10 +174,14 @@
 #### 44. Favor the use of standard functional interfaces
   * If one of the standard functional interfaces does the job, you should generally use it in preference to a purpose-built functional interface.
 #### 45. Use streams judiciously
+  * Using helper methods is even more important for readability in stream pipelines than in iterative code
+  * You can not return from the enclosing method or throw any checked exception that this method is declared to throw.
+#### 46. Prefer side-effect-free functions in streams
   *
-#### 46.
-#### 47.
-#### 48.
+#### 47. Prefer Collection to Stream as a return type
+  *
+#### 48. Use caution when making streams parallel
+  *
 
 ## 7 Methods
 49-56
