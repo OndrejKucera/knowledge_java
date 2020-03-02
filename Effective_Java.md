@@ -190,7 +190,8 @@
   * Typically, the resulting exception will be IllegalArgumentException, IndexOutOfBoundsException, or NullPointerException
   * You can use `Objects.requireNonNull()`
 #### 50. Make defensive copies when needed
-  *
+  * Date class is obsolete and should no lon- ger be used in new code
+  * It is essential to make a defensive copy of each mutable parameter to the constructor and to use the copies as components
 #### 51. Design method signatures carefully
   *
 #### 52. Use overloading judiciously
@@ -205,7 +206,12 @@
   *
 
 ## 8 General Programming
-57-68
+#### 57. Minimize the scope of local variables
+  *
+#### 58. Prefer for-each loops to traditional for loops
+  *
+#### 59. Know and use the libraries
+-68
 
 ## 9 Exceptions
 69-77
