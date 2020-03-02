@@ -186,7 +186,9 @@
   
 ## 7 Methods
 #### 49. Check parameters for validity
-  *
+  * For public and protected methods, use the Javadoc @throws tag to document the exception that will be thrown.
+  * Typically, the resulting exception will be IllegalArgumentException, IndexOutOfBoundsException, or NullPointerException
+  * 
 #### 50. Make defensive copies when needed
   *
 #### 51. Design method signatures carefully
