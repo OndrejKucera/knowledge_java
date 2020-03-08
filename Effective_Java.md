@@ -193,7 +193,9 @@
   * Date class is obsolete and should no lon- ger be used in new code
   * It is essential to make a defensive copy of each mutable parameter to the constructor and to use the copies as components
 #### 51. Design method signatures carefully
-  *
+  * Avoid long parameter lists
+  * For parameter types, favor interfaces over classes
+  * Prefer two-element enum types to boolean parameters
 #### 52. Use overloading judiciously
   *
 #### 53. Use varargs judiciously
