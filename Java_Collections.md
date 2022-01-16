@@ -8,7 +8,7 @@ Java Collections
   * It doesn’t allow duplicates. Otherwise nothing really special
   * **HashSet** - represent by hash table
   * **TreeSet** - implements SortedSet, it is [red-black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
-  * **LinkedHashSet** - keeps order, hash table
+  * **LinkedHashSet** - keeps order, hash table. It is extended by a [doubly linked list](https://en.wikipedia.org/wiki/Doubly_linked_list) between the elements, allowing them to be accessed in the order in which they were inserted
   * EnumSet - only enum values
   * CopyOnWriterArraySet - thread safe without synchronized methods, implemented as array  
 * **List**
